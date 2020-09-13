@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6edf03fb-6ee0-4184-a416-8352136baca5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1hM89fwjPDFUzDTzocKh44n8ZmC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/View" />
+      <recent name="$PROJECT_DIR$/View/details" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6edf03fb-6ee0-4184-a416-8352136baca5" name="Default Changelist" comment="" />
+      <created>1599809450354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599809450354</updated>
+      <workItem from="1599809451382" duration="7492000" />
+      <workItem from="1599841703183" duration="4026000" />
+      <workItem from="1599845738729" duration="806000" />
+      <workItem from="1599907099768" duration="6211000" />
+      <workItem from="1599913320483" duration="254000" />
+      <workItem from="1599988210365" duration="4138000" />
+      <workItem from="1600013018691" duration="8238000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog" timestamp="1600017729911">
+      <screen x="72" y="41" width="1848" height="1039" />
+    </state>
+    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog/72.41.1848.1039@72.41.1848.1039" timestamp="1600017729911" />
+    <state x="660" y="255" key="run.anything.popup" timestamp="1599911103841">
+      <screen x="72" y="41" width="1848" height="1039" />
+    </state>
+    <state x="660" y="255" key="run.anything.popup/72.41.1848.1039@72.41.1848.1039" timestamp="1599911103841" />
+  </component>
+</project>
