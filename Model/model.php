@@ -12,4 +12,10 @@ class model{
         $r=$db->getInstance($str);
         return $r;
     }
+    public function login($user,$pass){
+        $db=new connect_database();
+        $str="select * from user where user='$user' and password='$pass'";
+        $r=$db->getList($str);
+        return $r;
+    }
 }

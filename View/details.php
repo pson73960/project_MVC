@@ -66,7 +66,9 @@ include '../Model/model.php' ?>
                     echo $format; ?> VNĐ</h3><br>
                     <h3>Nhà Sản Xuất: <?php echo $set["4"]; ?></h3><br>
                     <h3>Số Lượng: <?php echo $set["5"]; ?></h3><br>
-                    <a href="#" class="btn btn-success">Thêm Vào Giỏ Hàng</a>
+                    <a href="cart.php?id=<?php echo $set["0"] ?>" class="btn btn-success">Thêm Vào Giỏ Hàng</a>
+                    <a href="index.php" class="btn btn-success">Trở về</a>
+
                 </aside>
             <?php }}
             else {echo "<h1>Sản phẩm không tồn tại.</h1>";}

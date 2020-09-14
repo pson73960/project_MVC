@@ -20,7 +20,7 @@ if (isset($id)&&is_numeric($id)){
         $_SESSION["cart"][$id]["name"]=$set["name"];
         $_SESSION["cart"][$id]["image"]=$set["image"];
         $_SESSION["cart"][$id]["price"]=$set["price"];
-        $_SESSION["success"]="Tồn tại giỏ hàng!Cập nhật mới thành công";
+        $_SESSION["success"]="Đã thêm vào giỏ hàng !!";
         header("Location:index.php");
         exit();
         }

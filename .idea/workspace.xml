@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edf03fb-6ee0-4184-a416-8352136baca5" name="Default Changelist" comment="" />
+    <list default="true" id="6edf03fb-6ee0-4184-a416-8352136baca5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Model/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/list-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/list-cart.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +37,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hM89fwjPDFUzDTzocKh44n8ZmC" />
   <component name="ProjectViewState">
@@ -42,18 +73,37 @@
       <workItem from="1599907099768" duration="6211000" />
       <workItem from="1599913320483" duration="254000" />
       <workItem from="1599988210365" duration="4138000" />
-      <workItem from="1600013018691" duration="8238000" />
+      <workItem from="1600013018691" duration="8845000" />
+      <workItem from="1600048592088" duration="5765000" />
+      <workItem from="1600081141396" duration="1536000" />
+      <workItem from="1600106378578" duration="4671000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog" timestamp="1600017729911">
+    <state x="779" y="318" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600074785486">
       <screen x="72" y="41" width="1848" height="1039" />
     </state>
-    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog/72.41.1848.1039@72.41.1848.1039" timestamp="1600017729911" />
+    <state x="779" y="318" width="424" height="491" key="FileChooserDialogImpl/72.41.1848.1039@72.41.1848.1039" timestamp="1600074785486" />
+    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog" timestamp="1600110966191">
+      <screen x="72" y="41" width="1848" height="1039" />
+    </state>
+    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog/72.41.1848.1039@72.41.1848.1039" timestamp="1600110966191" />
     <state x="660" y="255" key="run.anything.popup" timestamp="1599911103841">
       <screen x="72" y="41" width="1848" height="1039" />
     </state>

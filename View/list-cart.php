@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 <?php
 include '../config/connect_database.php';
@@ -24,13 +25,13 @@ include '../Model/model.php' ?>
 <div class="container">
     <div class="header">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-to">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.php">
                 <img src="../images/logo.png" alt="Logo" style="width:200px;height: 80px">
             </a>
             <!-- Links -->
             <ul class="navbar-nav" >
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Trang Chủ</a>
+                    <a class="nav-link" href="index.php">Trang Chủ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Liên Hệ</a>
@@ -75,10 +76,30 @@ include '../Model/model.php' ?>
             else {echo "<h1>Chưa có sản phẩm</h1>";}
             ?>
 
+            <form action="list-cart.php" method="post">
+                <input class="btn btn-success" style="margin-left: 490px" type="submit" name="truncate" value="Xóa Hết Giỏ Hàng" />
+            </form>
+            <?php
+            ob_start();
+            if(isset($_POST['truncate']))
+            {
+                func();
+            }
+            function func()
+            {
+                if (isset($_SESSION['cart'])){
+                unset($_SESSION['cart']);
+                header("Location:index.php");
+                die();
+                }
+                else{
+                    echo "<h1>Không có gì để xóa!!</h1>";
+                }
 
+            }
+            ob_flush();
+            ?>
         </div>
-
-
     </div>
     <?php
     include 'footer.php';
