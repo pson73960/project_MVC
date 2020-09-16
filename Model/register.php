@@ -12,15 +12,17 @@ if (isset($_POST['submit'])){
         $pass=strip_tags($_POST['pass']);
         $n=new model();
         $r=$n->login($user,$pass);
+        $set=$r->fetch();
+        if ($set>0){
 
-        if ($set=$r->fetch()>0){
-            $_SESSION['username']=$user;
-
+            $_SESSION['username']=$set['1'];
+            $_SESSION["role"]=$set["role"];
 //            $error="<div class='alert alert-success text-center' role='alert'>Login is successfull</div>";
          header("Location:../View/index.php");
+
         }
     else{
-        $error="<div class='alert alert-danger text-center' role='alert'>Sai user hoặc password</div>";
+        $_SESSION["error"]="Sai tên đăng nhập hoặc mật khẩu!!";
     }
     }
 

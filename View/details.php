@@ -27,13 +27,13 @@ include '../Model/model.php' ?>
             <!-- Links -->
             <ul class="navbar-nav" >
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Trang Chủ</a>
+                    <a class="nav-link" href="index.php">Trang Chủ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Liên Hệ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Đăng Nhập</a>
+                    <a class="nav-link" href="login.php">Đăng Nhập</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Đăng Ký</a>

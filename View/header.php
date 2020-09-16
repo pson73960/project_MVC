@@ -24,6 +24,7 @@
 </head>
 <body>
 <div class="container">
+
     <div class="header">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-to">
             <a class="navbar-brand" href="index.php">
@@ -47,12 +48,25 @@
                         <a class="nav-link" href="#">Đăng Ký</a>
                     </li>
                 <?php } ?>
+
+                <?php
+                if (isset($_SESSION['role']) && $_SESSION['role']==0) {
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.php">Trang Admin</a>
+                    </li>
+
+                <?php } ?>
+
                 <?php
                 if (isset($_SESSION['username'])) {
                     ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Đăng Xuất</a>
+                        <a href="logout.php" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Đăng Xuất
+                        </a>
                     </li>
+
                 <?php } ?>
             </ul>
             <?php
@@ -85,5 +99,24 @@
                     <a class="nav-link active" href="list-cart.php">Giỏ hàng</a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng Xuất</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Bạn Có Chắc Chắn Đăng Xuất Không!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="logout.php" class="btn btn-primary">Đăng Xuất</a>
+                </div>
+            </div>
         </div>
     </div>
