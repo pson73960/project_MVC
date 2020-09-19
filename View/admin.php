@@ -83,10 +83,15 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 0 ){
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-9">
-                <a type="button" style="margin-top: 95px;margin-bottom: 20px;font-size: 24px   " class="btn btn-primary">Thêm Sản Phẩm</a><br>
-
+<!--                <a type="button" style="margin-top: 95px;margin-bottom: 20px;font-size: 24px   " class="btn btn-primary">Thêm Sản Phẩm</a><br>-->
+            <a type="button" style="margin-top: 95px;margin-bottom: 20px;font-size: 24px   " class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Thêm Sản Phẩm !
+            </a>
 
             <div class="row">
+                <?php if (isset($_SESSION['ok'])) :?>
+                    <p class="text-danger"><?= $_SESSION['ok'] ?></p>
+                <?php endif ; unset($_SESSION['ok']) ?>
                 <table class="table table-dark table-hover">
                     <thead>
                     <tr>
@@ -104,7 +109,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 0 ){
                     ?>
                     <tr>
                         <td><?php echo $set["name"]?></td>
-                        <td><?php echo $set["price"]?></td>
+                        <td><?php echo number_format($set["price"])?></td>
                         <td><?php echo $set["NXX"]?></td>
                         <td><img src="../images/<?php echo $set["image"]?>" style="height: 150px;width: 150px"></td>
 
@@ -113,7 +118,41 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 0 ){
                     </tbody>
                 </table>
 
-
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Thêm Sản Phẩm</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="post" action="insert.php">
+                                    Name:<br>
+                                    <input type="text" name="name">
+                                    <br>
+                                    Price:<br>
+                                    <input type="number" name="price">
+                                    <br>
+                                    Image:<br>
+                                    <input type="text" name="image">
+                                    <br>
+                                    NXX:<br>
+                                    <input type="text" name="nxx"><br>
+                                    SL:<br>
+                                    <input type="number" name="sl">
+                                    <br><br>
+                                    <input type="submit" class="btn btn-primary" name="save" value="Thêm">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+<!--                                <button type="button" class="btn btn-primary">Thêm Sản Phẩm</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 

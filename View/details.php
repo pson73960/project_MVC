@@ -50,11 +50,13 @@ include '../Model/model.php' ?>
     <div class="content">
         <div class="row">
             <?php
-            if (isset($_GET["id"])&&$_GET["id"]<=8&&is_numeric($_GET["id"])){
+            if (isset($_GET["id"])&&$_GET["id"]<11 &&is_numeric($_GET["id"])){
             $id=$_GET["id"];
             $n=new model();
             $r=$n->getByID($id);
+
             while($set=$r->fetch()){
+
                 ?>
                 <aside class="col-sm-5 border-right" style="margin-bottom: 20px" >
                     <a href="details/<?php echo $set["0"];?>details.php" style="text-decoration: none;color:black">

@@ -4,7 +4,7 @@ session_start();
 $title="Web bán game";
 include  'header.php';
 include '../config/connect_database.php';
-include '../Model/model.php'?>
+include '../Model/model.php';?>
 <br>
 
     <?php

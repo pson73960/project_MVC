@@ -20,13 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6edf03fb-6ee0-4184-a416-8352136baca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/View/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/remove.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/list-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/list-cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/connect_database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/connect_database.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +88,8 @@
       <workItem from="1600081141396" duration="1536000" />
       <workItem from="1600106378578" duration="4808000" />
       <workItem from="1600135353120" duration="15143000" />
-      <workItem from="1600221860353" duration="1246000" />
+      <workItem from="1600221860353" duration="11694000" />
+      <workItem from="1600538056998" duration="4543000" />
     </task>
     <servers />
   </component>
@@ -108,10 +113,14 @@
       <screen x="72" y="41" width="1848" height="1039" />
     </state>
     <state x="779" y="318" width="424" height="491" key="FileChooserDialogImpl/72.41.1848.1039@72.41.1848.1039" timestamp="1600074785486" />
-    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog" timestamp="1600137101836">
+    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog" timestamp="1600538277896">
       <screen x="72" y="41" width="1848" height="1039" />
     </state>
-    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog/72.41.1848.1039@72.41.1848.1039" timestamp="1600137101836" />
+    <state x="791" y="486" width="399" height="156" key="NewPhpFileDialog/72.41.1848.1039@72.41.1848.1039" timestamp="1600538277896" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1600252523671">
+      <screen x="72" y="41" width="1848" height="1039" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/72.41.1848.1039@72.41.1848.1039" timestamp="1600252523671" />
     <state x="660" y="255" key="run.anything.popup" timestamp="1599911103841">
       <screen x="72" y="41" width="1848" height="1039" />
     </state>

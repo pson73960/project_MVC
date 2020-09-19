@@ -26,6 +26,10 @@ function getList($select){
     $result=$this->db->query($select);
     return $result;
 }
+    function getInsert($select){
+        $result=$this->db->exec($select);
+        return $result;
+    }
 function getInstance($select){
     $result=$this->db->query($select);
     //$result=$result->fetch();

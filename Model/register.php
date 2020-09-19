@@ -10,6 +10,7 @@ if (isset($_POST['submit'])){
         $pass=stripcslashes($pass);
         $user=strip_tags($_POST['username']);
         $pass=strip_tags($_POST['pass']);
+
         $n=new model();
         $r=$n->login($user,$pass);
         $set=$r->fetch();
@@ -24,6 +25,8 @@ if (isset($_POST['submit'])){
     else{
         $_SESSION["error"]="Sai tên đăng nhập hoặc mật khẩu!!";
     }
+    }else{
+        $_SESSION['empty']="Chưa nhập username và password!!";
     }
 
 }

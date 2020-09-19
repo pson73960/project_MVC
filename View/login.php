@@ -54,7 +54,8 @@
 <div class="wrapper fadeInDown">
 <?php if (isset($_SESSION['error'])){ echo $_SESSION['error'];
 unset($_SESSION['error']);}
-
+if (isset($_SESSION['empty'])){ echo $_SESSION['empty'];
+    unset($_SESSION['empty']);}
     ?>
     <h3 class="text-center text-white pt-5">Login form</h3>
     <div class="container">

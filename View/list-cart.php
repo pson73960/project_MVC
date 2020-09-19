@@ -57,7 +57,7 @@ include '../Model/model.php' ?>
 
             if (isset($_SESSION['cart'])){
 
-
+$total=0;
                             foreach ($_SESSION['cart']as $val){
                     ?>
                     <aside class="col-sm-5 border-right" style="margin-bottom: 20px" >
@@ -66,38 +66,32 @@ include '../Model/model.php' ?>
                     </aside >
                     <aside class="col-sm-7">
                         <h3><?php echo $val["name"] ?></h3><br>
-                       <h3 style="color: red;font-size: 22px;font-weight: bold ">Giá Tiền: <?php $format=number_format($val["price"]);
+                       <h3 style="color: red;font-size: 22px;font-weight: bold ">Giá Tiền: <?php $format=number_format($val["price"]*$val['qty']);
                        echo $format; ?> VNĐ</h3><br>
 <!--                        <h3>Nhà Sản Xuất: --><?php //echo $set["4"]; ?><!--</h3><br>-->
                         <h3>Số Lượng: <?php echo $val["qty"]; ?></h3><br>
 <!--                        <a href="#" class="btn btn-success">Thêm Vào Giỏ Hàng</a>-->
+
                     </aside>
-                <?php }}
+
+                <?php
+                                $total=$total+($val['qty']*$val['price']);
+                            }?>
+<?php
+                $fomat_total=number_format($total);
+                echo "<h1 style='color: #ff0000;margin-left: 30%'>Tổng tiền là: $fomat_total</h1>";
+            }
             else {echo "<h1>Chưa có sản phẩm</h1>";}
             ?>
+    <br>
 
-            <form action="list-cart.php" method="post">
+            <form action="remove.php" method="post"style="margin-top: 10%;">
                 <input class="btn btn-success" style="margin-left: 490px" type="submit" name="truncate" value="Xóa Hết Giỏ Hàng" />
             </form>
             <?php
             ob_start();
-            if(isset($_POST['truncate']))
-            {
-                func();
-            }
-            function func()
-            {
-                if (isset($_SESSION['cart'])){
-                unset($_SESSION['cart']);
-                header("Location:index.php");
-                die();
-                }
-                else{
-                    echo "<h1>Không có gì để xóa!!</h1>";
-                }
-
-            }
-            ob_flush();
+            if (isset($_POST['truncate'])){header('Location:remove.php');}
+            ob_end_flush();
             ?>
         </div>
     </div>
